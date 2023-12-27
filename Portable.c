@@ -17,20 +17,20 @@ volatile BaseType_t xInsideInterrupt = pdFALSE;
 //}
 ///*-----------------------------------------------------------*/
 
-NetworkBufferDescriptor_t * pxNetworkBufferGetFromISR( size_t xRequestedSizeBytes )
-{
-    ( void ) xRequestedSizeBytes;
-
-    return NULL;
-}
-/*-----------------------------------------------------------*/
-
-BaseType_t vNetworkBufferReleaseFromISR( NetworkBufferDescriptor_t * const pxNetworkBuffer )
-{
-    ( void ) pxNetworkBuffer;
-
-    return pdPASS;
-}
+//NetworkBufferDescriptor_t * pxNetworkBufferGetFromISR( size_t xRequestedSizeBytes )
+//{
+//    ( void ) xRequestedSizeBytes;
+//
+//    return NULL;
+//}
+///*-----------------------------------------------------------*/
+//
+//BaseType_t vNetworkBufferReleaseFromISR( NetworkBufferDescriptor_t * const pxNetworkBuffer )
+//{
+//    ( void ) pxNetworkBuffer;
+//
+//    return pdPASS;
+//}
 /*-----------------------------------------------------------*/
 
 BaseType_t xApplicationGetRandomNumber( uint32_t * pulNumber )
@@ -41,10 +41,10 @@ BaseType_t xApplicationGetRandomNumber( uint32_t * pulNumber )
 }
 /*-----------------------------------------------------------*/
 
-size_t xPortGetMinimumEverFreeHeapSize( void )
-{
-    return 0;
-}
+//size_t xPortGetMinimumEverFreeHeapSize( void )
+//{
+//    return 0;
+//}
 /*-----------------------------------------------------------*/
 
 const char * pcApplicationHostnameHook( void )
@@ -67,10 +67,10 @@ uint32_t ulApplicationGetNextSequenceNumber( uint32_t ulSourceAddress,
 }
 /*-----------------------------------------------------------*/
 
-BaseType_t xNetworkInterfaceInitialise( void )
-{
-    return pdPASS;
-}
+//BaseType_t xNetworkInterfaceInitialise( void )
+//{
+//    return pdPASS;
+//}
 /*-----------------------------------------------------------*/
 
 void vApplicationIPNetworkEventHook( eIPCallbackEvent_t eNetworkEvent )
@@ -135,16 +135,16 @@ uint32_t ulGetRunTimeCounterValue( void )
 //}
 ///*-----------------------------------------------------------*/
 
-void * pvPortMalloc( size_t xWantedSize )
-{
-    return malloc( xWantedSize );
-}
+//void * pvPortMalloc( size_t xWantedSize )
+//{
+//    return malloc( xWantedSize );
+//}
 /*-----------------------------------------------------------*/
 
-void vPortFree( void * pv )
-{
-    free( pv );
-}
+//void vPortFree( void * pv )
+//{
+//    free( pv );
+//}
 /*-----------------------------------------------------------*/
 
 //StackType_t * pxPortInitialiseStack( StackType_t * pxTopOfStack,
@@ -188,14 +188,14 @@ void vConfigureTimerForRunTimeStats( void )
 }
 /*-----------------------------------------------------------*/
 
-BaseType_t xNetworkInterfaceOutput( NetworkBufferDescriptor_t * const pxNetworkBuffer,
-                                    BaseType_t bReleaseAfterSend )
-{
-    ( void ) pxNetworkBuffer;
-    ( void ) bReleaseAfterSend;
-
-    return pdFAIL;
-}
+//BaseType_t xNetworkInterfaceOutput( NetworkBufferDescriptor_t * const pxNetworkBuffer,
+//                                    BaseType_t bReleaseAfterSend )
+//{
+//    ( void ) pxNetworkBuffer;
+//    ( void ) bReleaseAfterSend;
+//
+//    return pdFAIL;
+//}
 /*-----------------------------------------------------------*/
 
 //BaseType_t FreeRTOS_SendPingRequest( uint32_t ulIPAddress,
