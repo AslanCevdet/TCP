@@ -33,12 +33,12 @@ volatile BaseType_t xInsideInterrupt = pdFALSE;
 //}
 /*-----------------------------------------------------------*/
 
-BaseType_t xApplicationGetRandomNumber( uint32_t * pulNumber )
-{
-    ( void ) pulNumber;
-
-    return 0;
-}
+//BaseType_t xApplicationGetRandomNumber( uint32_t * pulNumber )
+//{
+//    ( void ) pulNumber;
+//
+//    return 0;
+//}
 /*-----------------------------------------------------------*/
 
 //size_t xPortGetMinimumEverFreeHeapSize( void )
@@ -53,18 +53,18 @@ const char * pcApplicationHostnameHook( void )
 }
 /*-----------------------------------------------------------*/
 
-uint32_t ulApplicationGetNextSequenceNumber( uint32_t ulSourceAddress,
-                                             uint16_t usSourcePort,
-                                             uint32_t ulDestinationAddress,
-                                             uint16_t usDestinationPort )
-{
-    ( void ) ulSourceAddress;
-    ( void ) usSourcePort;
-    ( void ) ulDestinationAddress;
-    ( void ) usDestinationPort;
-
-    return 0;
-}
+//uint32_t ulApplicationGetNextSequenceNumber( uint32_t ulSourceAddress,
+//                                             uint16_t usSourcePort,
+//                                             uint32_t ulDestinationAddress,
+//                                             uint16_t usDestinationPort )
+//{
+//    ( void ) ulSourceAddress;
+//    ( void ) usSourcePort;
+//    ( void ) ulDestinationAddress;
+//    ( void ) usDestinationPort;
+//
+//    return 0;
+//}
 /*-----------------------------------------------------------*/
 
 //BaseType_t xNetworkInterfaceInitialise( void )
@@ -108,10 +108,10 @@ void vApplicationTickHook( void )
 {
 }
 
-uint32_t ulGetRunTimeCounterValue( void )
-{
-    return 0;
-}
+//uint32_t ulGetRunTimeCounterValue( void )
+//{
+//    return 0;
+//}
 /*-----------------------------------------------------------*/
 
 //void vPortEndScheduler( void )
